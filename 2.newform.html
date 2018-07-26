@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="#">
+		<progress style="height:5px" value="20" max="100" id="pro">70%</progress>
+	</form>
+	<script type="text/javascript">
+	//页面加载成功之后执行func中的代码
+		window.onload = function(){
+			//每过100hs,执行function中的代码
+			setInterval(function() {
+				document.getElementById("pro").value ++;
+			},(100))
+		}
+	</script>
+
+</body>
+</html>
